@@ -1,9 +1,13 @@
 import cv2
 import numpy as np 
 from matplotlib import pyplot as plt  #matplotlib初始設定
-img = cv2.imread('test.jpg',cv2.IMREAD_GRAYSCALE)  
+img = cv2.imread('test.jpg',1)
+
+img1=cv2.cvtColor(img, cv2.COLOR_BGR2RGB) #顏色轉換
 
 # test.jpg後面直接輸入0會顯示黑白1會顯示彩色
+
+
 
 print(img)    #從灰階叫出img可以知道圖片的大小
               #從彩色叫出img可以知道RGB組成   
