@@ -6,7 +6,7 @@ img = cv2.imread('test.jpg',1)
 
 print(img.shape)
 
-roi=img[140:12,640:788]
+roi=img[150:12,640:788]
 img[149:194,460:608]=roi
 # roi=img[200:400, 200:400]
 # img[100:300,100:300]=roi
